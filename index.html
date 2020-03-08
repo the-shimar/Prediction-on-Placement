@@ -1,0 +1,57 @@
+<html>
+    <head>
+
+        <title>Appu Broilers</title>
+        <!--jQuery code-->
+        <script
+        src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo="
+        crossorigin="anonymous"></script>
+        <!--jQuery code-->
+
+    </head>
+<body>
+    <!--HTML Scripts-->
+    <h1>Register</h1><br>
+    <button id="write_btn" onclick="redirect_login()">Write</button>
+    <br>
+
+    <form method="post">
+        <input type="name" id="reg_name" placeholder="Name"><br>
+        <input type="email" id="reg_email" placeholder="Email"><br>
+        <input type="password" id="reg_password" placeholder="Password"><br>        
+    </form>
+    <button type="submit" id="Reg_btn" onclick="register_fun()">Register</button>
+    <a href="login.html">Do you already have account! Login</a>
+
+    <!--HTML Scripts within this-->
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.9.3/firebase-app.js"></script>
+<script src="https://www.gstatic.com/firebasejs/7.9.3/firebase-firestore.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<!--<script src="https://www.gstatic.com/firebasejs/7.9.3/firebase-analytics.js"></script> -->
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyCngcyhioYJmdlAK87v-fyXhNk1detvrQs",
+    authDomain: "appu-broilers.firebaseapp.com",
+    databaseURL: "https://appu-broilers.firebaseio.com",
+    projectId: "appu-broilers",
+    storageBucket: "appu-broilers.appspot.com",
+    messagingSenderId: "20662982756",
+    appId: "1:20662982756:web:ce8437665b72c5c0732771",
+    measurementId: "G-4DBLT02YQJ"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+ // firebase.analytics();
+</script>
+
+<script src="index.js"></script>
+
+</body>
+</html>
